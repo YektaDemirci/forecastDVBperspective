@@ -1,17 +1,6 @@
 #!/usr/bin/env python3
 """
 ARFIMA(2,0,0) forecast daemon for the beam-hopping scheduler.
-
-Protocol (line-based, stdin → stdout):
-  Input  line: comma-separated floats, e.g. "0.0,1200.0,4400.0,..."
-  Output line: single float — the 1-step-ahead forecast, e.g. "3210.5"
-
-One input line → one output line. stdout is flushed after every reply.
-Runs indefinitely until stdin closes.
-
-Uses a single persistent R subprocess (loaded once at startup) so that the
-arfima package is only initialised once, keeping per-call latency to ~20ms
-instead of ~1s per call.
 """
 
 import sys

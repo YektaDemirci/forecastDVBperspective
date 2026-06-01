@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
 """
-FGN optimal-linear forecast daemon for the beam-hopping scheduler.
+Norros optimal-linear forecast daemon for the beam-hopping scheduler.
 
-Protocol (line-based, stdin → stdout):
-  Input  line: beam_id,s0,s1,...,s23   (beam ID followed by 24 samples)
-  Output line: single float — the 1-step-ahead forecast
-
-Usage:
-  python3 fgn.py --hurst55=0.9 --hurst56=0.75 --hurst57=0.8
-
-No normalisation is applied. Raw byte counts are used directly.
 """
 
 import sys
