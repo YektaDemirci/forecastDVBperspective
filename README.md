@@ -1,3 +1,5 @@
+Please check out: https://github.com/YektaDemirci/sns3_dynamic_bh
+
 # Dynamic Beam Hopping for DVB-Based LEO Networks
 
 This repository contains the data folders required to run dynamic beam hopping examples presented in:
